@@ -1,0 +1,247 @@
+@import "variables";
+
+.header
+{
+  background-color: $background-color;
+  margin-top: 25px;
+}
+.logo
+{
+  width: 115px;
+  height: 28px;
+  position: absolute;
+  cursor: $cursor;
+  margin-left: 20px;
+
+}
+.button_menu
+{
+  display: flex;
+  justify-content: flex-end;
+  cursor: $cursor;
+  margin-right: 23px;
+
+}
+.navigation
+{
+  display: none;
+}
+.faq_img
+{
+  margin: 100px auto 0 auto;
+  text-align: center;
+}
+.faq_img img
+{
+  height: 186px;
+  width: 242px;
+}
+.faq_heading
+{
+  font: $font;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 120%;
+  text-align: center;
+  color: $text-color;
+  margin-top: 55px;
+}
+.faq_description
+{
+  font: $font;
+  line-height: 147.3%;
+  text-align: center;
+  color: $text-color;
+  margin-top: 10px;
+  padding: 0 20px;
+}
+.faq_collapsible
+{
+  margin: 30px auto 50px auto;
+  text-align: center;
+  width: 335px;
+}
+.collapsible
+{
+  width: 335px;
+  background-color: $background-color;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 15px;
+  padding: 14px 20px;
+  text-align: left;
+  font: $font;
+  line-height: 147.3%;
+  color: $text-color;
+}
+.content
+{
+  font: $font;
+  font-size: 14px;
+  line-height: 147.3%;
+  color: $text-color;
+  margin-bottom: 30px;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  width: 295px;
+}
+.content p
+{
+  text-align: left;
+}
+.footer
+{
+  height: 125px;
+  margin-bottom: 0;
+  background: #3F3D56;
+  display: flex;
+  flex-direction: column;
+}
+.footer_cop
+{
+  font: $font;
+  line-height: 19px;
+  color: $background-color;
+  opacity: 0.4;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+.icon
+{
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  list-style-type: none;
+}
+.footer_item
+{
+  margin-left: -20px;
+  margin-right: 40px;
+  width: 27px;
+  height: 27px;
+  cursor: $cursor;
+}
+.active, .collapsible:hover {
+  background: rgba(97, 161, 153, 0.1);
+}
+.collapsible:after {
+  content: '\2228';
+  font-weight: 500;
+  float: right;
+  margin-left: 5px;
+  color: #61A199;
+}
+.active:after {
+  content: "\2227";
+}
+
+@media all and (min-width: 768px) {
+
+  .header {
+    margin-top: 0;
+  }
+
+  .logo {
+    margin-left: 40px;
+    margin-top: 30px;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .link {
+    text-decoration: none;
+    font: $font;
+    color: $text-color;
+    cursor: $cursor;
+  }
+
+  li {
+    display: inline;
+    margin-top: 35px;
+  }
+
+  .list li {
+    margin-left: 30px;
+  }
+
+  li button {
+    border: 1px solid rgba(27, 27, 27, 0.4);
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin-right: 40px;
+    background-color: inherit;
+    cursor: $cursor;
+    font: $font;
+    font-weight: 500;
+    width: 106px;
+    height: 43px;
+  }
+
+  .button_menu {
+    display: none;
+  }
+
+  .faq-img {
+    margin-top: 110px;
+  }
+
+  .faq_img img {
+    height: 275px;
+    width: 360px;
+  }
+
+  .faq_heading {
+    font-weight: bold;
+    font-size: 64px;
+    margin-top: 87px;
+  }
+
+  .faq_description {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+
+  .faq_collapsible {
+    margin: 60px auto 120px auto;
+    width: 1026px;
+  }
+
+  .collapsible {
+    width: 1026px;
+  }
+
+  .footer {
+    height: 124px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  .footer_cop {
+    padding-top: 55px;
+    padding-left: 40px;
+  }
+  .icon li
+  {
+    display: flex;
+    justify-content: right;
+
+  }
+  .footer_item
+  {
+    margin-right: 20px;
+    padding-right: 20px;
+  }
+  .content
+  {
+    font-size: 20px;
+    margin-bottom: 40px;
+    width: 784px;
+  }
+}
+
